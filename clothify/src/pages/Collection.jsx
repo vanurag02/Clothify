@@ -5,41 +5,86 @@ import Title from "../components/Title";
 import ProductItem from "../components/ProductItem";
 
 const Collection = () => {
-  const { products } = useContext(ShopContext);
+  const { products, search, showSearch } = useContext(ShopContext);
+
+  // ================= STATE =================
   const [showFilter, setShowFilter] = useState(false);
   const [filterProducts, setFilterProducts] = useState([]);
   const [category, setCategory] = useState([]);
   const [subCategory, setSubCategory] = useState([]);
+  const [sortType, setSortType] = useState("relevance");
 
-  useEffect(() => {
-    setFilterProducts(products);
-  }, []);
-
-  // FUNCTION TO GET SELECTED CATEGORY
-  const toggleCategory = (e) => {
-    if (category.includes(e.target.value)) {
-      setCategory((prev) => prev.filter((item) => item !== e.target.value));
+  // ================= COMMON TOGGLE LOGIC =================
+  const toggleValue = (value, state, setState) => {
+    if (state.includes(value)) {
+      setState((prev) => prev.filter((item) => item !== value));
     } else {
-      setCategory((prev) => [...prev, e.target.value]);
+      setState((prev) => [...prev, value]);
     }
   };
 
+  // ================= CATEGORY =================
+  const toggleCategory = (e) => {
+    toggleValue(e.target.value, category, setCategory);
+  };
+
   useEffect(() => {
-    console.log(category);
+    console.log("Category changed:", category);
   }, [category]);
 
-  // FUNCTION TO GET SELECTED SUB-CATEGORY
+  // ================= SUB-CATEGORY =================
   const toggleSubCategory = (e) => {
-    if (subCategory.includes(e.target.value)) {
-      setSubCategory((prev) => prev.filter((item) => item !== e.target.value));
-    } else {
-      setSubCategory((prev) => [...prev, e.target.value]);
-    }
+    toggleValue(e.target.value, subCategory, setSubCategory);
   };
 
   useEffect(() => {
-    console.log(subCategory);
+    console.log("SubCategory changed:", subCategory);
   }, [subCategory]);
+
+  // ================= FILTER + SORT (COMBINED) =================
+  const applyFilterAndSort = () => {
+    let productsCopy = products.slice();
+
+    if (showSearch && search) {
+      productsCopy = productsCopy.filter((item) =>
+        item.name.toLowerCase().includes(search.toLowerCase()),
+      );
+    }
+
+    // ===== FILTER =====
+    if (category.length > 0) {
+      productsCopy = productsCopy.filter((item) =>
+        category.includes(item.category),
+      );
+    }
+
+    if (subCategory.length > 0) {
+      productsCopy = productsCopy.filter((item) =>
+        subCategory.includes(item.subCategory),
+      );
+    }
+
+    // ===== SORT =====
+    switch (sortType) {
+      case "low-high":
+        productsCopy.sort((a, b) => a.price - b.price);
+        break;
+
+      case "high-low":
+        productsCopy.sort((a, b) => b.price - a.price);
+        break;
+
+      default:
+        break;
+    }
+
+    setFilterProducts(productsCopy);
+  };
+
+  // ================= EFFECT =================
+  useEffect(() => {
+    applyFilterAndSort();
+  }, [category, subCategory, sortType, products, search, showSearch]);
 
   return (
     <>
@@ -132,11 +177,14 @@ const Collection = () => {
         {/* RIGHT SIDE */}
         <div className="flex-1">
           <div className="flex justify-between text-base sm:text-2xl mb-4">
-            <Title text1={"ALL"} text2={"COLLECTIONS"} />
+            <Title text1={"ALL"} text2={"COLLECTION"} />
 
             {/* SORT DROPDOWN */}
-            <select className="border border-gray-300 text-sm px-3 py-2 rounded-md outline-none focus:border-gray-500 focus:ring-1 focus:ring-gray-500 cursor-pointer shadow-md hover:shadow-lg transition-all ease-in-out duration-300">
-              <option value="relevant">Relevance</option>
+            <select
+              className="border border-gray-300 text-sm px-3 py-2 outline-none focus:border-gray-500 focus:ring-1 focus:ring-gray-500 cursor-pointer hover:shadow-md transition-all ease-in-out duration-300"
+              onChange={(e) => setSortType(e.target.value)}
+            >
+              <option value="relevance">Relevance</option>
               <option value="low-high">Price: Low to High</option>
               <option value="high-low">Price: High to Low</option>
             </select>
