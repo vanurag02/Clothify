@@ -35,17 +35,6 @@ const NotFound = () => {
         >
           Back to Home
         </Link>
-
-        <p className="text-gray-600">
-          Or browse our{" "}
-          <Link
-            to="/collection"
-            className="text-gray-900 underline underline-offset-4 transition-colors"
-          >
-            latest collection
-          </Link>{" "}
-          instead.
-        </p>
       </div>
     </div>
   );
