@@ -1,0 +1,269 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Mast & Harbour Men Navy Blue & Red Checked Casual Shirt",
+      "category": "top-wear",
+      "basePrice": 599,
+      "rating": 4.3,
+      "reviews": "7,929",
+      "variants": [
+        { "size": 38, "price": 599, "stock": 8 },
+        { "size": 40, "price": 649, "stock": 2 },
+        { "size": 42, "price": 799, "stock": 5 },
+        { "size": 44, "price": 849, "stock": 1 }
+      ],
+      "images": [
+        "/images/mast-and-harbour-men-navy-blue-and-red-checked-casual-shirt-1.jpg",
+        "/images/mast-and-harbour-men-navy-blue-and-red-checked-casual-shirt-2.jpg",
+        "/images/mast-and-harbour-men-navy-blue-and-red-checked-casual-shirt-3.jpg",
+        "/images/mast-and-harbour-men-navy-blue-and-red-checked-casual-shirt-4.jpg",
+        "/images/mast-and-harbour-men-navy-blue-and-red-checked-casual-shirt-5.jpg",
+        "/images/mast-and-harbour-men-navy-blue-and-red-checked-casual-shirt-6.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Roadster Men Aarona Slim Fit Opaque Formal Shirt",
+      "category": "top-wear",
+      "basePrice": 649,
+      "rating": 4.2,
+      "reviews": "29,252",
+      "variants": [
+        { "color": "Charcoal", "size": 38, "price": 649, "stock": 1 },
+        { "color": "Charcoal", "size": 40, "price": 699, "stock": 7 },
+        { "color": "Charcoal", "size": 42, "price": 799, "stock": 4 },
+        { "color": "Charcoal", "size": 44, "price": 849, "stock": 2 }
+      ],
+      "images": [
+        "/images/roadster-men-arona-slim-fit-opaque-formal-shirt-1.jpg",
+        "/images/roadster-men-arona-slim-fit-opaque-formal-shirt-2.jpg",
+        "/images/roadster-men-arona-slim-fit-opaque-formal-shirt-3.jpg",
+        "/images/roadster-men-arona-slim-fit-opaque-formal-shirt-4.jpg",
+        "/images/roadster-men-arona-slim-fit-opaque-formal-shirt-5.jpg",
+        "/images/roadster-men-arona-slim-fit-opaque-formal-shirt-6.jpg",
+        "/images/roadster-men-arona-slim-fit-opaque-formal-shirt-charcoal.jpg",
+        "/images/roadster-men-arona-slim-fit-opaque-formal-shirt-grey.jpg",
+        "/images/roadster-men-arona-slim-fit-opaque-formal-shirt-teal.jpg",
+        "/images/roadster-men-arona-slim-fit-opaque-formal-shirt-white.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Roadster Men Blue Solid Cotton Chambray Shirt",
+      "category": "top-wear",
+      "basePrice": 559,
+      "rating": 4.1,
+      "reviews": "14,755",
+      "variants": [
+        { "size": 38, "price": 559, "stock": 6 },
+        { "size": 40, "price": 599, "stock": 3 },
+        { "size": 42, "price": 699, "stock": 2 },
+        { "size": 44, "price": 799, "stock": 9 }
+      ],
+      "images": [
+        "/images/roadster-men-blue-solid-cotton-chambray-shirt-1.jpg",
+        "/images/roadster-men-blue-solid-cotton-chambray-shirt-2.jpg",
+        "/images/roadster-men-blue-solid-cotton-chambray-shirt-3.jpg",
+        "/images/roadster-men-blue-solid-cotton-chambray-shirt-4.jpg",
+        "/images/roadster-men-blue-solid-cotton-chambray-shirt.jpg",
+        "/images/roadster-men-blue-solid-cotton-chambray-shirt-6.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Roadster Men Grey Solid Cotton Casual Shirt",
+      "category": "top-wear",
+      "basePrice": 549,
+      "rating": 4.1,
+      "reviews": "694",
+      "variants": [
+        { "size": 38, "price": 549, "stock": 5 },
+        { "size": 40, "price": 599, "stock": 2 },
+        { "size": 42, "price": 749, "stock": 7 },
+        { "size": 44, "price": 799, "stock": 3 }
+      ],
+      "images": [
+        "/images/roadster-men-grey-solid-cotton-casual-shirt-1.jpg",
+        "/images/roadster-men-grey-solid-cotton-casual-shirt-2.jpg",
+        "/images/roadster-men-grey-solid-cotton-casual-shirt-3.jpg",
+        "/images/roadster-men-grey-solid-cotton-casual-shirt-4.jpg",
+        "/images/roadster-men-grey-solid-cotton-casual-shirt-5.jpg",
+        "/images/roadster-men-grey-solid-cotton-casual-shirt-6.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Roadster Men Navy Blue Cotton Casual Shirt",
+      "category": "top-wear",
+      "basePrice": 549,
+      "rating": 4.2,
+      "reviews": "51,763",
+      "variants": [
+        { "size": 38, "price": 549, "stock": 4 },
+        { "size": 40, "price": 599, "stock": 2 },
+        { "size": 42, "price": 699, "stock": 6 },
+        { "size": 44, "price": 749, "stock": 1 }
+      ],
+      "images": [
+        "/images/roadster-men-navy-blue-cotton-casual-shirt-1.jpg",
+        "/images/roadster-men-navy-blue-cotton-casual-shirt-2.jpg",
+        "/images/roadster-men-navy-blue-cotton-casual-shirt-3.jpg",
+        "/images/roadster-men-navy-blue-cotton-casual-shirt-4.jpg",
+        "/images/roadster-men-navy-blue-cotton-casual-shirt-5.jpg",
+        "/images/roadster-men-navy-blue-cotton-casual-shirt-6.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Roadster Washed Cotton Denim Shirt",
+      "category": "top-wear",
+      "basePrice": 579,
+      "rating": 4.1,
+      "reviews": "14,790",
+      "variants": [
+        { "size": 38, "price": 579, "stock": 3 },
+        { "size": 40, "price": 599, "stock": 5 },
+        { "size": 42, "price": 689, "stock": 2 },
+        { "size": 44, "price": 749, "stock": 4 }
+      ],
+      "images": [
+        "/images/roadster-washed-cotton-denim-shirt-1.jpg",
+        "/images/roadster-washed-cotton-denim-shirt-2.jpg",
+        "/images/roadster-washed-cotton-denim-shirt-3.jpg",
+        "/images/roadster-washed-cotton-denim-shirt-4.jpg",
+        "/images/roadster-washed-cotton-denim-shirt-5.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Roadster Men Olive Green Cotton Casual Shirt",
+      "category": "top-wear",
+      "basePrice": 559,
+      "rating": 4.2,
+      "reviews": "51,762",
+      "variants": [
+        { "color": "Navy Blue", "size": 38, "price": 559, "stock": 4 },
+        { "color": "Navy Blue", "size": 40, "price": 649, "stock": 2 },
+        { "color": "Teal", "size": 42, "price": 699, "stock": 5 },
+        { "color": "Teal", "size": 44, "price": 749, "stock": 1 }
+      ],
+      "images": [
+        "/images/roadster-men-olive-green-cotton-casual-shirt-1.jpg",
+        "/images/roadster-men-olive-green-cotton-casual-shirt-2.jpg",
+        "/images/roadster-men-olive-green-cotton-casual-shirt-3.jpg",
+        "/images/roadster-men-olive-green-cotton-casual-shirt-4.jpg",
+        "/images/roadster-men-olive-green-cotton-casual-shirt-5.jpg",
+        "/images/roadster-men-olive-green-cotton-casual-shirt-6.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "FABRIPPLE Men Cotton Classic Loose Fit Cargos Trousers",
+      "category": "bottom-wear",
+      "basePrice": 590,
+      "rating": 4,
+      "reviews": "26,975",
+      "variants": [
+        { "color": "Black", "size": 30, "price": 590, "stock": 3 },
+        { "color": "Grey", "size": 32, "price": 649, "stock": 2 },
+        { "color": "Black", "size": 34, "price": 699, "stock": 5 },
+        { "color": "Grey", "size": 36, "price": 749, "stock": 4 },
+        { "color": "Black", "size": 38, "price": 849, "stock": 1 }
+      ],
+      "images": [
+        "/images/fabripple-men-cotton-classic-loose-fit-cargos-trousers-1.jpg",
+        "/images/fabripple-men-cotton-classic-loose-fit-cargos-trousers-2.jpg",
+        "/images/fabripple-men-cotton-classic-loose-fit-cargos-trousers-3.jpg",
+        "/images/fabripple-men-cotton-classic-loose-fit-cargos-trousers-4.jpg",
+        "/images/fabripple-men-cotton-classic-loose-fit-cargos-trousers-5.jpg",
+        "/images/fabripple-men-cotton-classic-loose-fit-cargos-trousers-6.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Mufti Men Skinny Fit Stretchable Jeans",
+      "category": "bottom-wear",
+      "basePrice": 1799,
+      "rating": 5,
+      "reviews": "6,971",
+      "variants": [
+        { "size": 28, "stock": 6 },
+        { "size": 30, "stock": 4 },
+        { "size": 32, "stock": 2 },
+        { "size": 34, "stock": 5 },
+        { "size": 36, "stock": 3 },
+        { "size": 38, "stock": 1 }
+      ],
+      "images": [
+        "/images/mufti-men-skinny-fit-stretchable-jeans-1.jpg",
+        "/images/mufti-men-skinny-fit-stretchable-jeans-2.jpg",
+        "/images/mufti-men-skinny-fit-stretchable-jeans-3.jpg",
+        "/images/mufti-men-skinny-fit-stretchable-jeans-4.jpg",
+        "/images/mufti-men-skinny-fit-stretchable-jeans-5.jpg",
+        "/images/mufti-men-skinny-fit-stretchable-jeans-6.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Nautica Men Smart Easy Wash Cargo Trousers",
+      "category": "bottom-wear",
+      "basePrice": 1319,
+      "rating": 4.3,
+      "reviews": "1,673",
+      "variants": [
+        { "color": "Black", "size": 28, "stock": 5 },
+        { "color": "Grey", "size": 30, "stock": 3 },
+        { "color": "Black", "size": 32, "stock": 2 },
+        { "color": "Grey", "size": 34, "stock": 4 },
+        { "color": "Black", "size": 36, "stock": 6 },
+        { "color": "Grey", "size": 38, "stock": 1 }
+      ],
+      "images": [
+        "/images/nautica-men-smart-easy-wash-cargo-trousers-1.jpg",
+        "/images/nautica-men-smart-easy-wash-cargo-trousers-2.jpg"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "StyleCast Men Trousers With Front & Back Same Pockets",
+      "category": "bottom-wear",
+      "basePrice": 1479,
+      "rating": 4.3,
+      "reviews": "718",
+      "variants": [
+        { "color": "Olive", "size": 30, "stock": 4 },
+        { "color": "Khaki", "size": 32, "stock": 2 },
+        { "color": "Black", "size": 34, "stock": 5 },
+        { "color": "Olive", "size": 36, "stock": 3 },
+        { "color": "Khaki", "size": 38, "stock": 6 },
+        { "color": "Black", "size": 40, "stock": 2 },
+        { "color": "Olive", "size": 42, "stock": 1 }
+      ],
+      "images": [
+        "/images/stylecast-men-trousers-with-front-&-back-pockets-1.jpg",
+        "/images/stylecast-men-trousers-with-front-&-back-pockets-2.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "WROGN Men Slim Fit Stretchable Jeans",
+      "category": "bottom-wear",
+      "basePrice": 1279,
+      "rating": 4.3,
+      "reviews": "718",
+      "variants": [
+        { "size": 28, "stock": 5 },
+        { "size": 30, "stock": 3 },
+        { "size": 32, "stock": 2 },
+        { "size": 34, "stock": 6 },
+        { "size": 36, "stock": 4 },
+        { "size": 38, "stock": 1 }
+      ],
+      "images": [
+        "/images/wrogn-men-slim-fit-stretchable-jeans-1.jpg",
+        "/images/wrogn-men-slim-fit-stretchable-jeans-2.jpg"
+      ]
+    }
+  ]
+}
