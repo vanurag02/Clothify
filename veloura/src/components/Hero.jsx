@@ -20,7 +20,7 @@ const Hero = () => {
           Style that speaks <em className="text-gray-500">before</em> you do.
         </h1>
 
-        <p className="text-[20px] text-sm text-gray-600 leading-relaxed max-w-sm">
+        <p className="text-[18px] text-sm text-gray-600 leading-relaxed max-w-sm">
           Crafted for those who value quality over quantity — from sharp
           everyday essentials to refined statement pieces.
         </p>
