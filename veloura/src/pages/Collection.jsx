@@ -52,17 +52,23 @@ const Collection = () => {
       );
     }
 
-    // CATEGORY FILTER
+    // CATEGORY FILTER (case-insensitive)
     if (category.length > 0) {
       productsCopy = productsCopy.filter((item) =>
-        category.includes(item.category),
+        category.some(
+          (val) =>
+            val.toLowerCase().trim() === item.category.toLowerCase().trim(),
+        ),
       );
     }
 
-    // SUB-CATEGORY FILTER
+    // SUB-CATEGORY FILTER (case-insensitive)
     if (subCategory.length > 0) {
       productsCopy = productsCopy.filter((item) =>
-        subCategory.includes(item.subCategory),
+        subCategory.some(
+          (val) =>
+            val.toLowerCase().trim() === item.subCategory.toLowerCase().trim(),
+        ),
       );
     }
 
@@ -90,7 +96,7 @@ const Collection = () => {
 
   return (
     <div className="flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t border-gray-300">
-      {/* LEFT FILTER */}
+      {/* FILTER OPTIONS | LEFT SIDE*/}
       <div className="min-w-60">
         <p
           className="my-2 text-lg font-semibold flex items-center cursor-pointer gap-4"
@@ -99,33 +105,62 @@ const Collection = () => {
           FILTERS
           <img
             src="/images/dropdown_icon.png"
-            className={`h-3 sm:hidden ${showFilter ? "rotate-90" : ""}`}
+            className={`h-3 sm:hidden ${showFilter ? "rotate-90" : ""} transition-all ease-in-out duration-200`}
             alt=""
           />
         </p>
 
-        {/* CATEGORY */}
+        {/* CATEGORY FILTER */}
+        <div
+          className={`border border-gray-300 pl-5 py-3 mt-6 ${showFilter ? "" : "hidden"} sm:block`}
+        >
+          <p className="mb-3 text-sm font-medium">CATEGORIES</p>
+          <div className="flex flex-col gap-2 text-sm text-gray-700">
+            <p className="flex gap-2">
+              <input
+                type="checkbox"
+                className="w-3"
+                value={"Men"}
+                onChange={toggleCategory}
+              />
+              Men
+            </p>
+            <p className="flex gap-2">
+              <input
+                type="checkbox"
+                className="w-3"
+                value={"Women"}
+                onChange={toggleCategory}
+              />
+              Women
+            </p>
+          </div>
+        </div>
+
+        {/* SUB-CATEGORY FILTER */}
         <div
           className={`border border-gray-300 pl-5 py-3 my-5 ${showFilter ? "" : "hidden"} sm:block`}
         >
-          <p className="mb-3 text-sm font-medium">CATEGORIES</p>
-          <div className="flex flex-col gap-2 text-sm">
-            <label>
+          <p className="mb-3 text-sm font-medium">TYPE</p>
+          <div className="flex flex-col gap-2 text-sm text-gray-700">
+            <p className="flex gap-2">
               <input
                 type="checkbox"
-                value="top-wear"
-                onChange={toggleCategory}
-              />{" "}
-              Top Wear
-            </label>
-            <label>
+                className="w-3"
+                value={"Top wear"}
+                onChange={toggleSubCategory}
+              />
+              Top wear
+            </p>
+            <p className="flex gap-2">
               <input
                 type="checkbox"
-                value="bottom-wear"
-                onChange={toggleCategory}
-              />{" "}
-              Bottom Wear
-            </label>
+                className="w-3"
+                value={"Bottom wear"}
+                onChange={toggleSubCategory}
+              />
+              Bottom wear
+            </p>
           </div>
         </div>
       </div>

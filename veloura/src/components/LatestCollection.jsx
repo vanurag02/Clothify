@@ -6,12 +6,28 @@ import Title from "./Title";
 const LatestCollection = () => {
   const [products, setProducts] = useState([]);
 
+  // Helper function to shuffle array
+  const shuffleArray = (array) => {
+    return array.sort(() => 0.5 - Math.random());
+  };
+
   useEffect(() => {
     const fetchProducts = async () => {
       const data = await getProducts();
-      // Take only the first 4 products
-      setProducts(data.slice(0, 4));
+
+      // Separate categories
+      const menProducts = data.filter((item) => item.category === "Men");
+
+      const womenProducts = data.filter((item) => item.category === "Women");
+
+      // Shuffle and pick 2 each
+      const randomMen = shuffleArray(menProducts).slice(0, 2);
+      const randomWomen = shuffleArray(womenProducts).slice(0, 2);
+
+      // Combine
+      setProducts([...randomMen, ...randomWomen]);
     };
+
     fetchProducts();
   }, []);
 
@@ -24,6 +40,7 @@ const LatestCollection = () => {
           wear.
         </p>
       </div>
+
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {products.map((product) => (
           <ProductItem key={product.id} product={product} />

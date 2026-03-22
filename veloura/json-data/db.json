@@ -13,8 +13,7 @@
         "/images/mast-and-harbour-men-navy-blue-and-red-checked-casual-shirt-2.jpg",
         "/images/mast-and-harbour-men-navy-blue-and-red-checked-casual-shirt-3.jpg",
         "/images/mast-and-harbour-men-navy-blue-and-red-checked-casual-shirt-4.jpg",
-        "/images/mast-and-harbour-men-navy-blue-and-red-checked-casual-shirt-5.jpg",
-        "/images/mast-and-harbour-men-navy-blue-and-red-checked-casual-shirt-6.jpg"
+        "/images/mast-and-harbour-men-navy-blue-and-red-checked-casual-shirt-5.jpg"
       ],
       "variants": [
         { "size": "38", "price": 599 },
@@ -66,7 +65,7 @@
         "/images/roadster-men-blue-solid-cotton-chambray-shirt-2.jpg",
         "/images/roadster-men-blue-solid-cotton-chambray-shirt-3.jpg",
         "/images/roadster-men-blue-solid-cotton-chambray-shirt-4.jpg",
-        "/images/roadster-men-blue-solid-cotton-chambray-shirt.jpg",
+        "/images/roadster-men-blue-solid-cotton-chambray-shirt-5.jpg",
         "/images/roadster-men-blue-solid-cotton-chambray-shirt-6.jpg"
       ],
       "variants": [
@@ -190,9 +189,8 @@
         "/images/fabripple-men-cotton-classic-loose-fit-cargos-trousers-3.jpg",
         "/images/fabripple-men-cotton-classic-loose-fit-cargos-trousers-4.jpg",
         "/images/fabripple-men-cotton-classic-loose-fit-cargos-trousers-5.jpg",
-        "/images/fabripple-men-cotton-classic-loose-fit-cargos-trousers-6.jpg",
         "/images/fabripple-men-cotton-classic-loose-fit-cargos-trousers-black.jpg",
-        "/images/fabripple-men-cotton-classic-loose-fit-cargos-trousersgrey.jpg"
+        "/images/fabripple-men-cotton-classic-loose-fit-cargos-trousers-grey.jpg"
       ],
       "variants": [
         { "size": "30", "price": 590 },
@@ -413,7 +411,7 @@
         "/images/sangria-colourblocked-pure-linen-saree-4.jpg",
         "/images/sangria-colourblocked-pure-linen-saree-5.jpg"
       ],
-      "variants": [{ "size": "Free", "price": 1372 }]
+      "variants": [{ "size": "Onesize", "price": 1372 }]
     },
 
     {
@@ -430,7 +428,7 @@
         "/images/kalini-women-silk-blend-woven-banarasi-saree-3.jpg",
         "/images/kalini-women-silk-blend-woven-banarasi-saree-4.jpg"
       ],
-      "variants": [{ "size": "Free", "price": 1142 }]
+      "variants": [{ "size": "Onesize", "price": 1142 }]
     },
 
     {
@@ -447,7 +445,7 @@
         "/images/anouk-sequinned-pure-georgette-saree-3.jpg",
         "/images/anouk-sequinned-pure-georgette-saree-4.jpg"
       ],
-      "variants": [{ "size": "Free", "price": 1349 }]
+      "variants": [{ "size": "Onesize", "price": 1349 }]
     },
 
     {
@@ -465,7 +463,7 @@
         "/images/anouk-woven-design-zari-banarasi-saree-4.jpg",
         "/images/anouk-woven-design-zari-banarasi-saree-5.jpg"
       ],
-      "variants": [{ "size": "Free", "price": 1298 }]
+      "variants": [{ "size": "Onesize", "price": 1298 }]
     }
   ]
 }

@@ -13,7 +13,15 @@ const TitleUpdater = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const title = routeTitles[location.pathname] || "Page Not Found";
+    let title = routeTitles[location.pathname];
+
+    if (!title) {
+      if (location.pathname.startsWith("/product")) {
+        title = "Veloura – Product Details";
+      } else {
+        title = "Page Not Found";
+      }
+    }
 
     document.title = title;
   }, [location]);
