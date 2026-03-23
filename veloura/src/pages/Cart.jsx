@@ -53,9 +53,9 @@ const Cart = () => {
   return (
     <div className="max-w-5xl mx-auto px-6 sm:px-10 py-16">
       {/* Title */}
-      <p className="text-[16px] font-semibold tracking-wider uppercase text-gray-400 mb-10">
-        Shopping Cart
-        <span className="ml-2 text-gray-300 font-normal text-sm">
+      <p className="text-[26px] font-semibold tracking-wide text-black mb-10">
+        Your Cart
+        <span className="ml-2 text-gray-500 font-normal text-sm">
           ({cartItems.length} {cartItems.length === 1 ? "item" : "items"})
         </span>
       </p>
@@ -63,11 +63,11 @@ const Cart = () => {
       <div className="flex flex-col lg:flex-row gap-10">
         {/* Items */}
         <div className="flex-1">
-          <div className="hidden sm:grid grid-cols-[2fr_1fr_1fr_1fr] gap-4 pb-3 border-b border-gray-200">
+          <div className="hidden sm:grid grid-cols-[2fr_1fr_1fr_1fr] gap-4 pb-3 border-b border-gray-400">
             {["Product", "Price", "Quantity", "Total"].map((h) => (
               <p
                 key={h}
-                className="text-[10px] tracking-[0.16em] uppercase text-gray-400"
+                className="text-[14px] font-medium tracking-wide text-gray-600"
               >
                 {h}
               </p>
@@ -77,7 +77,7 @@ const Cart = () => {
           {cartItems.map((item) => (
             <div
               key={`${item.id}-${item.size}`}
-              className="grid grid-cols-1 sm:grid-cols-[2fr_1fr_1fr_1fr] gap-4 items-center py-5 border-b border-gray-100"
+              className="grid grid-cols-1 sm:grid-cols-[2fr_1fr_1fr_1fr] gap-4 items-center py-5 border-b border-gray-300"
             >
               {/* Product */}
               <div className="flex gap-4 items-start">
@@ -142,20 +142,22 @@ const Cart = () => {
 
         {/* Order Summary */}
         <div className="lg:w-72 shrink-0">
-          <div className="border border-gray-200 p-6">
-            <p className="text-[11px] tracking-[0.16em] uppercase text-gray-700 font-medium mb-5">
+          <div className="border border-gray-300 p-6">
+            <p className="text-[14px] uppercase text-black font-semibold mb-5">
               Order Summary
             </p>
             <div className="flex justify-between text-sm text-gray-500 mb-2">
-              <span>Subtotal</span>
-              <span>
+              <span className="text-black font-semibold">Subtotal</span>
+              <span className="text-black font-medium">
                 {currency}
                 {subtotal.toLocaleString("en-IN")}
               </span>
             </div>
             <div className="flex justify-between text-sm text-gray-500 mb-4">
-              <span>Shipping</span>
-              <span className={shipping === 0 ? "text-green-600" : ""}>
+              <span className="text-black font-semibold">Shipping</span>
+              <span
+                className={shipping === 0 ? "text-green-600 font-medium" : ""}
+              >
                 {shipping === 0 ? "Free" : `${currency}${shipping}`}
               </span>
             </div>
@@ -174,12 +176,12 @@ const Cart = () => {
                 {total.toLocaleString("en-IN")}
               </span>
             </div>
-            <button className="w-full bg-gray-900 hover:bg-gray-700 text-white text-[11px] font-medium tracking-[0.14em] uppercase py-3.5 transition-colors duration-200">
+            <button className="w-full bg-gray-950 text-white hover:bg-black text-[12px] font-medium tracking-wider uppercase cursor-pointer py-3.5 transition-all ease-in-out duration-200">
               Proceed to Checkout
             </button>
             <Link
               to="/collection"
-              className="block text-center text-[10px] tracking-widest uppercase text-gray-400 hover:text-gray-900 transition-colors mt-4 underline underline-offset-4"
+              className="block text-center text-[12px] font-medium uppercase text-gray-600 hover:text-gray-900 transition-all mt-4"
             >
               Continue Shopping
             </Link>

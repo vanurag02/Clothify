@@ -117,12 +117,6 @@ const CartDrawer = () => {
                         +
                       </button>
                     </div>
-                    <button
-                      onClick={() => removeFromCart(item.id, item.size)}
-                      className="text-[10px] tracking-widest uppercase text-gray-400 hover:text-gray-900 transition-colors"
-                    >
-                      Remove
-                    </button>
                   </div>
                 </div>
               </div>
@@ -133,19 +127,8 @@ const CartDrawer = () => {
         {/* Footer */}
         {cartItems.length > 0 && (
           <div className="px-5 py-5 border-t border-gray-200">
-            <div className="flex justify-between text-sm text-gray-500 mb-1">
-              <span>Subtotal</span>
-              <span>
-                {currency}
-                {subtotal.toLocaleString("en-IN")}
-              </span>
-            </div>
-            <div className="flex justify-between text-sm text-gray-500 mb-4">
-              <span>Shipping</span>
-              <span>{shipping === 0 ? "Free" : `${currency}${shipping}`}</span>
-            </div>
             <div className="flex justify-between text-sm font-medium text-gray-900 mb-5">
-              <span>Total</span>
+              <span>Cart Total</span>
               <span>
                 {currency}
                 {total.toLocaleString("en-IN")}
@@ -154,7 +137,7 @@ const CartDrawer = () => {
             <Link
               to="/cart"
               onClick={() => setIsDrawerOpen(false)}
-              className="block w-full bg-gray-950 text-white hover:bg-black text-[11px] font-medium tracking-[0.14em] uppercase py-3.5 text-center transition-colors duration-200"
+              className="block w-full bg-gray-950 text-white hover:bg-black text-[12px] font-medium tracking-wider uppercase py-3.5 text-center transition-colors duration-200"
             >
               View Cart
             </Link>

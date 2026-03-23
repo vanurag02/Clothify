@@ -149,7 +149,7 @@ const Product = () => {
           {/* Sizes */}
           {product.variants && (
             <div>
-              <p className="text-xs font-semibold tracking-widest uppercase text-gray-700 mb-3">
+              <p className="text-xs font-semibold tracking-wide uppercase text-gray-700 mb-3">
                 Select Size
               </p>
               <div className="flex gap-2 flex-wrap">
