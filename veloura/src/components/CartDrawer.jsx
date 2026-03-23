@@ -127,8 +127,19 @@ const CartDrawer = () => {
         {/* Footer */}
         {cartItems.length > 0 && (
           <div className="px-5 py-5 border-t border-gray-200">
+            <div className="flex justify-between text-sm text-gray-500 mb-1">
+              <span>Subtotal</span>
+              <span>
+                {currency}
+                {subtotal.toLocaleString("en-IN")}
+              </span>
+            </div>
+            <div className="flex justify-between text-sm text-gray-500 mb-4">
+              <span>Shipping</span>
+              <span>{shipping === 0 ? "Free" : `${currency}${shipping}`}</span>
+            </div>
             <div className="flex justify-between text-sm font-medium text-gray-900 mb-5">
-              <span>Cart Total</span>
+              <span>Total</span>
               <span>
                 {currency}
                 {total.toLocaleString("en-IN")}
